@@ -1,10 +1,13 @@
-grade
-subject
-chapter
+# Schema details
 
-Question:
+## Question 
+* grade
+* subject
+* chapter
+
+**Question:**
 templateName: 01
-answerType: text/select/multi-text/multi-select
+_answerType_: text/select/multi-text/multi-select
 lineOne: 
 lineTwo: 
 lineThree: 
@@ -17,6 +20,10 @@ choices: []
 answer: 
 
 answer options:
+
+[kalai dev](kalai.dev)
+
+![alteratext](xxcc.img)
 
 -------------------------------
 Answer:
