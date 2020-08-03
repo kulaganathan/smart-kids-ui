@@ -6,18 +6,18 @@
 * chapter
 
 **Question:**
-templateName: 01
-_answerType_: text/select/multi-text/multi-select
-lineOne: 
-lineTwo: 
-lineThree: 
-lineFour: 
-imageOne:
-imageTwo:
-imageThree: 
-imageFour:
-choices: []
-answer: 
+* templateName: 01
+* _answerType_: text/select/multi-text/multi-select
+* lineOne: 
+* lineTwo: 
+* lineThree: 
+* lineFour: 
+* imageOne:
+* imageTwo:
+* imageThree: 
+* imageFour:
+* choices: []
+* answer: 
 
 answer options:
 
