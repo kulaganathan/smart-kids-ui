@@ -1,0 +1,23 @@
+{
+  "questions": [
+      {
+          "id": "cduu-hjhd-3628-fie8-xjhd",
+          "subject":"math",
+          "grade":"1",
+          "templateName": "1LineQ-1TextAns",
+          "line1":"How many sides are there in a triangle",
+          "line2": null,
+          "line3": null,
+          "image1": null,
+          "image2": null,
+          "image3": null,
+          "image4": null,
+          "image1-repeat": 2,
+          "option1":"",
+          "option2":"",
+          "option3":"",
+          "option4":"",
+          "answer": "3"
+      }
+  ]
+}

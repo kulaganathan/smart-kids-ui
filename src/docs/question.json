@@ -1,0 +1,24 @@
+{
+  "templateName": "templateName1",
+  "subject":"math",
+  "grade":"1",
+  "questions": [
+      {
+          "id": "",
+          "description":"",
+          "line1":"",
+          "line2":"",
+          "line3":"",
+          "image1":"",
+          "image2":"",
+          "image3":"",
+          "image4":"",
+          "image1-repeat": 2,
+          "option1":"",
+          "option2":"",
+          "option3":"",
+          "option4":"",
+          "answer": ""
+      }
+  ]
+}
