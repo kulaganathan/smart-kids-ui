@@ -1,23 +1,19 @@
-import { Component, OnInit, Injectable, ChangeDetectionStrategy } from '@angular/core';
-import { HttpClient, HttpErrorResponse, HttpHandler, JsonpClientBackend } from '@angular/common/http';
-import { Questions } from './questions';
-import { QuestionService } from '../question.service';
-import { Question } from './question';
-import { Observable } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Questions } from '../quiz/questions';
 
 @Component({
-  selector: 'app-quiz',
-  templateUrl: './quiz.component.html',
-  styleUrls: ['./quiz.component.css'],
-  providers: [QuestionService],
+  selector: 'app-two-digit-math',
+  templateUrl: './two-digit-math.component.html',
+  styleUrls: ['./two-digit-math.component.css']
 })
-export class QuizComponent implements OnInit {
+export class TwoDigitMathComponent implements OnInit {
 
   questions: Questions;
   private questionsURL = 'assets/questions.json';
   answer: string;
 
-  constructor(private questionService: QuestionService, private http: HttpClient) {
+  constructor(private http: HttpClient) {
   }
 
   ngOnInit(): void {
@@ -39,15 +35,16 @@ export class QuizComponent implements OnInit {
     this.http.get<Array<Questions>>(this.questionsURL).subscribe(myObserver);
   }
 
-  onSubmit(value: string): void {
-    console.log('value is: ' + value);
-    this.answer = value;
+  onSubmit(value1: string, value2: string): void {
+    console.log('value is: ' + (value1 + value2));
+    this.answer = (value1 + value2);
     if (this.answer === this.questions.questions[0].answer) {
       window.alert('Yay!!');
       console.log('Yay!!');
-    }else{
+    } else {
       window.alert('Incorrect answer..please try again!');
     }
   }
+
 
 }

@@ -37,8 +37,11 @@
     <div class="row">
         <div class="col">
             <div>
-                <div style="text-align: right;">{{this.questions.questions[0].line2}}</div>
-                <div style="text-align: right;">{{this.questions.questions[0].line3}}</div>
+                <div style="text-align: right;">
+                 <span> {{this.questions.questions[0].line2.charAt(0)}}</span> 
+                 <span> &nbsp;</span> 
+                 <span> {{this.questions.questions[0].line2.charAt(1)}}</span> 
+                </div>
             </div>
         </div>
         <div class="col"></div>
@@ -49,10 +52,28 @@
     <div class="row">
         <div class="col">
             <div>
-                <div style="text-align: right;"><input name="answer" type="text" size="2" maxlength="2" #answer></div>
+                <div style="text-align: right;">
+                 <span> {{this.questions.questions[0].line3.charAt(0)}}</span> 
+                 <span> &nbsp;</span> 
+                 <span> {{this.questions.questions[0].line3.charAt(1)}}</span> 
+                </div>
             </div>
         </div>
-        <div class="col"><button type="submit" (click)="onSubmit(answer.value)">Submit</button></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>
+                <div style="text-align: right;">
+                    <input name="answer1" type="text" size="1" maxlength="2" class="number-input" #answer1 style="width: 24px;">
+                    <input name="answer2" type="text" size="1" maxlength="2" class="number-input" #answer2 style="width: 24px">
+                </div>
+            </div>
+        </div>
+        <div class="col"><button type="submit" (click)="onSubmit(answer1.value,answer2.value)">Submit</button></div>
         <div class="col"></div>
         <div class="col"></div>
         <div class="col"></div>
